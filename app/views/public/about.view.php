@@ -8,7 +8,7 @@
 ?>
 
     <main id="about-me">
-		<div class="container py-5">
+		<div class="container py-3">
 			<a href="#" id="export-aboutme">
 				<i class="fa fa-file-word-o"></i>
 				Sačuvaj kao word dokument
@@ -33,7 +33,7 @@
                     </div>
                     <hr>
                     <p>
-						<a class="repo black" href="#" target="_blank">Repozitorijum ovog sajta</a>
+						<a class="repo black" href="https://github.com/markorusic/wp2-bookshelf" target="_blank">Repozitorijum ovog sajta</a>
 					</p>
 					<p>
 						<a href="<?= asset('dokumentacija.pdf') ?>" target="_blank">Dokumentacija sajta</a>
