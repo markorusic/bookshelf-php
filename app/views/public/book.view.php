@@ -29,9 +29,9 @@
         <div class="single-book">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="book-image-preview">
-                        <div class="position-relative">
-                            <img class="img-fluid gallery-active-photo" src="<?= $book->main_photo ?>" alt="<?= $book->name ?>" class="img-fluid">
+                    <div class="book-image-preview h-100">
+                        <div class="position-relative h-100">
+                            <img class="img-fluid h-100" src="<?= $book->main_photo ?>" alt="<?= $book->name ?>" class="img-fluid">
                         </div>
                     </div>
                     
