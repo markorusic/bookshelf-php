@@ -11,4 +11,4 @@
 <script src="<?= asset('js/user-activity-track.js') ?>"></script>
 <?php endif ?>
 <script src="<?= asset('js/admin/formValidation.js') ?>"></script>
-<script src="<?= asset('js/admin/app.js') ?>"></script>
+<script src="<?= asset('js/admin/dataForm.js') ?>"></script>
