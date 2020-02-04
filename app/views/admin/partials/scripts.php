@@ -10,5 +10,4 @@
 <?php if (auth()->check('admin')): ?>
 <script src="<?= asset('js/user-activity-track.js') ?>"></script>
 <?php endif ?>
-<script src="<?= asset('js/admin/form-validation.js') ?>"></script>
 <script src="<?= asset('js/admin/data-form.js') ?>"></script>
