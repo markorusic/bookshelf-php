@@ -21,7 +21,7 @@
 
     <!-- Contact Form -->
 
-    <div class="container">
+    <div class="container py-3">
         <div class="row">
             <div class="col-md-8">
                 <h6>Have a question?</h6>
