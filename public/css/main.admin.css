@@ -164,3 +164,6 @@ ul.navbar-nav li {
 .page-item.disabled {
   pointer-events: none;
 }
+.pagination {
+  overflow-x: scroll;
+}
