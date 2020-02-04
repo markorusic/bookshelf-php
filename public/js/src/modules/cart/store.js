@@ -1,5 +1,5 @@
 import bookService from '../book/book-service'
-import EventEmitter from '../../shared/utils/EventEmitter'
+import EventEmitter from '../../shared/EventEmitter'
 import { ACTIONS, LC_CART_KEY, SHIPPING_FEE } from './config'
 
 export default {

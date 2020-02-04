@@ -1,4 +1,4 @@
-import pagination from '../../shared/utils/pagination'
+import pagination from '../../shared/pagination'
 
 export default (() => {
   const $dom = {}

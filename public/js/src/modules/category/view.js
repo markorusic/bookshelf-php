@@ -1,4 +1,4 @@
-import View from '../../shared/utils/View'
+import View from '../../shared/View'
 
 export default new View(
   ({ id, name, main_photo }) => `

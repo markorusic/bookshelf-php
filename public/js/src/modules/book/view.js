@@ -1,5 +1,5 @@
 import { CURRENCY } from '../cart/config'
-import View from '../../shared/utils/View'
+import View from '../../shared/View'
 
 const limit = (str = '', chars = 28) =>
   `${str.slice(0, chars).trim()}${str.length >= chars ? '...' : ''}`

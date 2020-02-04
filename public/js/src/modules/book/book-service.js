@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { wait } from '../../shared/utils'
+import { wait } from '../../shared'
 
 const INITIAL_STATE = {
   items: [],

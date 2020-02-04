@@ -1,4 +1,4 @@
-import { FormValidation } from '../../shared/utils'
+import { FormValidation } from '../../shared'
 import bookService from '../book/book-service'
 import store from './store'
 import view from './view'

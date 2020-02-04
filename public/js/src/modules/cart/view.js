@@ -1,5 +1,5 @@
 import { CURRENCY } from './config'
-import { View } from '../../shared/utils'
+import { View } from '../../shared'
 
 const views = {
   cartBookView: new View(

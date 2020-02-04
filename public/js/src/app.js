@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { FormValidation, formData, url, pagination } from './shared/utils'
+import { FormValidation, formData, url, pagination } from './shared'
 import { book, cart, category } from './modules'
 import { CURRENCY } from './modules/cart/config'
 import bookService from './modules/book/book-service'
