@@ -1,6 +1,9 @@
 <?php
-    $page_title = 'About me';
-	$page_description = 'Imam 21 godinu, iz Beograda sam, student druge godine Visoke ICT skole, smer Internet tehnologije. Aktivno se bavim veb programiranjem od treceg razreda srenje skole. Privi programski jezik koji me je ozbiljno zaniteresovao bio je Javascript, tako da sam se u pocetku fokusirao na front end, sve do trenutka u kom sam otkrio Node.js i uopste sve benefite vezane za bekend programiranje. Danas mogu reci za sebe da posedujem znanje u mnogim klijentskim i serverskim tehnologijama.';
+	$page_title = 'About me';
+	$d1 = new DateTime();
+	$d2 = new DateTime('1998-02-27');
+	$diff = $d2->diff($d1);
+	$page_description = 'Imam ' . $diff->y . '. godinu, iz Beograda sam, student druge godine Visoke ICT skole, smer Internet tehnologije. Aktivno se bavim veb programiranjem od treceg razreda srenje skole. Privi programski jezik koji me je ozbiljno zaniteresovao bio je Javascript, tako da sam se u pocetku fokusirao na front end, sve do trenutka u kom sam otkrio Node.js i uopste sve benefite vezane za bekend programiranje. Danas mogu reci za sebe da posedujem znanje u mnogim klijentskim i serverskim tehnologijama.';
     include 'partials/header.php';
 ?>
 
@@ -24,8 +27,8 @@
                         <a href="https://github.com/markorusic" class="btn btn-brand" style="width: 250px;" target="_blank">
 							<i class="fa fa-github"></i> Github
 						</a> 
-                        <a href="https://codepen.io/marko123/" class="btn btn-brand" style="width: 250px;" target="_blank">
-							<i class="fa fa-codepen"></i> Codepen
+                        <a href="https://www.linkedin.com/in/markorusic/" class="btn btn-brand" style="width: 250px;" target="_blank">
+							<i class="fa fa-linkedin"></i> Linkedin
 						</a> 
                     </div>
                     <hr>
