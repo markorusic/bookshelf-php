@@ -1,0 +1,6 @@
+public/uploads/*
+public/js/node_modules
+public/js/.cache
+.env.json
+error_data.txt
+page_visits_data.txt
