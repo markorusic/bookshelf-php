@@ -4,7 +4,7 @@
     <div class="copyright">
         <div class="container text-center">
             <small class="text-center">
-                <?= config('app.name') ?> © <?= date("Y") ?>. <a href="<?= asset('dokumentacija.pdf') ?>" target="_blank">Docs</a>
+                <?= config('app.name') ?> © <?= date("Y") ?>. <a href="https://drive.google.com/file/d/1N67PJXAC1MkorAXVDsavbnkCrs45lScD/view?usp=sharing" target="_blank">Docs</a>
             </small>
             <p class="text-center">Author <a href="/about">Marko Rusić</a></p>
         </div>
