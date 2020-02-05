@@ -184,7 +184,7 @@ const formModule = (() => {
     }
 
     const responseHandlers = {
-      success($form, config, response) {
+      success($form, config) {
         const $msg = $form.find('.error-message')
         $msg
           .parent()
@@ -202,56 +202,47 @@ const formModule = (() => {
       },
       error($form, config, error) {
         const data = error.response.data
-        const errorMessage = data.errors
-          ? Object.values(data.errors).join('<br />')
-          : 'Error occured.'
-        const $msg = $form.find('.error-message')
-        $msg
-          .parent()
-          .parent()
-          .removeClass('hidden')
-        $msg.html(errorMessage)
+        console.log(data)
+
+        $.toast({
+          heading: 'Error',
+          text: 'Error occured during this action!',
+          showHideTransition: 'slide',
+          icon: 'error',
+          position: 'top-right',
+          loader: false
+        })
+
         $form.find('button[type="submit"]').removeClass('loading-btn')
       },
-      successCreate($form, { resource }) {
-        const $alert = $form.find('.response-alert').addClass('p-3')
-        let createUrl = location.href
-        let seeAllUrl = ''
-        let seeAllHTML = ''
-
-        if (resource) {
-          createUrl = `${location.origin}/admin/${resource}/create`
-          seeAllUrl = `${location.origin}/admin/${resource}/showAll`
-          seeAllHTML = `<li><a class="bold" href="${seeAllUrl}">See all</a></li>`
-        }
-
-        const linksHTML = `
-          <ul class="flex-list nice-list">
-            <li><a class="bold" href="${createUrl}">Create new</a></li>
-            ${seeAllHTML}
-          </ul>
-        `
-
-        $alert.find('.message').text('Successfuly created!')
-        $alert.find('.options').html(linksHTML)
+      successCreate($form) {
+        $.toast({
+          heading: 'Success',
+          text: 'Successfuly created!',
+          showHideTransition: 'slide',
+          icon: 'success',
+          position: 'top-right',
+          loader: false
+        })
 
         $form
           .on('submit', event => event.preventDefault())
           .find('button[type="submit"]')
           .fadeOut()
       },
-      successUpdate($form, { resource }) {
+      successUpdate($form) {
+        $.toast({
+          heading: 'Success',
+          text: 'Successfuly updated!',
+          showHideTransition: 'slide',
+          icon: 'success',
+          position: 'top-right',
+          loader: false
+        })
         // clear gallery fields
         $('.dz-gallery')
           .find('input[type="hidden"]')
           .remove()
-
-        const $alert = $form.find('.response-alert').addClass('p-3')
-        const time = dayjs().format('HH:mm:ss')
-
-        $alert.find('.message').text('Successfuly updated!')
-        $alert.find('.options').text(`Updated at: ${time}`)
-
         $form
           .on('submit', event => event.preventDefault())
           .find('button[type="submit"]')
