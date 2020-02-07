@@ -42,8 +42,8 @@ class PublicAuthController extends Controller
       return redirect($this->redirectPath);
     }
     MailService::send([
-      'to' => $email,
-      'subject' => 'Failed login attempt',
+      'to' => $_POST['email'],
+      'subject' => 'Bookshelf - Failed login attempt',
       'message' => 'Failed login attempt'
     ]);
     return redirectBack();
