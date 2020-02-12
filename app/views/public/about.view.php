@@ -38,9 +38,6 @@
 					<p>
 						<a href="https://drive.google.com/file/d/1N67PJXAC1MkorAXVDsavbnkCrs45lScD/view?usp=sharing" target="_blank">Dokumentacija sajta</a>
 					</p>
-					<p>
-						<a href="/sitemap.xml" target="_blank">Sitemap</a>
-					</p>
                 </div>
 	        </div>	        
     	</div>
