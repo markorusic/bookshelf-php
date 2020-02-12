@@ -36,7 +36,7 @@
 						<a class="repo black" href="https://github.com/markorusic/wp2-bookshelf" target="_blank">Repozitorijum ovog sajta</a>
 					</p>
 					<p>
-						<a href="<?= asset('dokumentacija.pdf') ?>" target="_blank">Dokumentacija sajta</a>
+						<a href="https://drive.google.com/file/d/1N67PJXAC1MkorAXVDsavbnkCrs45lScD/view?usp=sharing" target="_blank">Dokumentacija sajta</a>
 					</p>
 					<p>
 						<a href="/sitemap.xml" target="_blank">Sitemap</a>
